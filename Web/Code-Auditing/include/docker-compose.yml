@@ -25,6 +25,7 @@ services:
     - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
     - ./flag/flag_include_content_1_rbont_qa121:/var/www/flag_include_content_1_rbont_qa121
     - ./www/include_contents_1.php:/var/www/html/index.php
+ 
  web_include_contents_2:
    image: php:5.6-apache
    ports:

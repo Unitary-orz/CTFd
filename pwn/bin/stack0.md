@@ -32,3 +32,7 @@ NX        : disabled
 PIE       : disabled
 RELRO     : disabled
 ```
+
+```
+gcc -m32 -fno-stack-protector -z execstack -z norelro -o stack0 stack0.c
+```
