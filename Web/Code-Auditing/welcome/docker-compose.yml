@@ -3,7 +3,7 @@ services:
  web:
    image: php:5.6-apache
    ports:
-    - "8092:80"
+    - "9006":80"
    volumes:
     - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
     - ./www/:/var/www/html/

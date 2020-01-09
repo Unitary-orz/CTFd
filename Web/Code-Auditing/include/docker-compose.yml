@@ -3,34 +3,34 @@ services:
  web_include_1:
    image: php:5.6-apache
    ports:
-    - "8093:80"
+    - "9002:80"
    volumes:
-    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
-    - ./flag/flag.php:/var/www/html/flag.php
-    - ./www/include_1.php:/var/www/html/index.php
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini:ro
+    - ./flag/flag.php:/var/www/html/flag.php:ro
+    - ./www/include_1.php:/var/www/html/index.php:ro
  web_include_2:
    image: php:5.6-apache
    ports:
-    - "8094:80"
+    - "9003:80"
    volumes:
-    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
-    - ./flag/flag_include2_9moy_vr7g:/var/www/flag_include2_9moy_vr7g
-    - ./www/include_2.php:/var/www/html/index.php
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini:ro
+    - ./flag/flag_include2_9moy_vr7g:/var/www/flag_include2_9moy_vr7g:ro
+    - ./www/include_2.php:/var/www/html/index.php:ro
 
  web_include_contents_1:
    image: php:5.6-apache
    ports:
-    - "8095:80"
+    - "9004:80"
    volumes:
-    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
-    - ./flag/flag_include_content_1_rbont_qa121:/var/www/flag_include_content_1_rbont_qa121
-    - ./www/include_contents_1.php:/var/www/html/index.php
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini:ro
+    - ./flag/flag_include_content_1_rbont_qa121:/var/www/flag_include_content_1_rbont_qa121:ro
+    - ./www/include_contents_1.php:/var/www/html/index.php:ro
  
  web_include_contents_2:
    image: php:5.6-apache
    ports:
-    - "8096:80"
+    - "9005:80"
    volumes:
-    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
-    - ./flag/flag_include_content_1_rbont_qa121:/var/www/flag_include_content_1_rbont_qa121
-    - ./www/include_contents_2.php:/var/www/html/index.php
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini:ro
+    - ./flag/flag_include_content_1_rbont_qa121:/var/www/flag_include_content_1_rbont_qa121:ro
+    - ./www/include_contents_2.php:/var/www/html/index.php:ro
