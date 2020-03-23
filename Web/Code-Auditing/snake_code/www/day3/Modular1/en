@@ -1,0 +1,3 @@
+<?php
+$flag2 = "flag在上面的目录下的test.php中";
+echo $flag2;
