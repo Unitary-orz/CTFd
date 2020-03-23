@@ -11,8 +11,8 @@ foreach ($_GET as $key => $value)
     $$key = $$value;
 foreach ($_POST as $key => $value)
     $$key = $value;
-if ( $_POST["flag"] !== $flag )
+if ( $_POST["flag"] !== $flag6 )
     die($_403);
-echo "This is your flag : ". $flag . "\n";
+echo "This is your flag : ". $flag6 . "\n";
 die($_200);
 ?>

@@ -10,7 +10,7 @@ if(isset($_GET['time'])){
                         echo 'This time is too long.'; 
         }else{ 
                 sleep((int)$_GET['time']); 
-                echo $flag3; 
+                echo $flag5; 
         } 
                 echo '<hr>'; 
 }
